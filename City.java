@@ -21,8 +21,15 @@ public class City {
 		cityPeople[9].setName("Grant");
 		cityPeople[10].setName("Alex");
 		cityPeople[11].setName("Dean");
+		
+		cityPeople[1].setRank("Patrol");
+		cityPeople[4].setRank("Sergeant");
+		cityPeople[7].setRank("Captain");
+		cityPeople[10].setRank("Chief");
+		
 		cityBuildings[0].setName("CityHall");
 		cityBuildings[1].setName("Whitworth");
+		
 		System.out.printf("Here are the names of all the residents in the city:\n");
 		getNamesOfResidents();
 		System.out.printf("Here are the names of all the buildings in the city:\n");
