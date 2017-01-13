@@ -12,8 +12,13 @@ public class Teacher extends Person
 		Savings = newSavings;
 	}
 
-	public int getEmpolyeeID() {
+	public int getEmployeeID() {
 		return EmployeeID;
+	}
+	
+	public void setID(int x)
+	{
+		EmployeeID = x;
 	}
 	
 	public String getName()
@@ -48,30 +53,4 @@ public class Teacher extends Person
 	{
 		return Savings;
 	}
-	
-	public int getX()
-	{
-		return x;
-	}
-	
-	public int getY()
-	{
-		return y;
-	}
-	
-	public void setX(int X)
-	{
-		x = X;
-	}
-	
-	public void setY(int Y)
-	{
-		y = Y;
-	}
-	
-	public String getRank() {
-		return "No Rank";
-	}
-	
-	public void setRank(String r){}
 }

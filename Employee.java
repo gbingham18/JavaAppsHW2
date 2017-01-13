@@ -1,5 +1,5 @@
 
 public interface Employee {
 	void payEmployee();
-	int getEmpolyeeID();
+	int getEmployeeID();
 }

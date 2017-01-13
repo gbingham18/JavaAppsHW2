@@ -27,29 +27,10 @@ public class Kid extends Person{
 	
 	public int getSavings() { return 0; }
 	
-	public int getX()
-	{
-		return x;
+	public int getEmployeeID() {
+		return 0;
 	}
 	
-	public int getY()
-	{
-		return y;
-	}
-	
-	public void setX(int X)
-	{
-		x = X;
-	}
-	
-	public void setY(int Y)
-	{
-		y = Y;
-	}
-	
-	public String getRank() {
-		return "No Rank";
-	}
-	
-	public void setRank(String r){}
+	public void setID(int x)
+	{}
 }

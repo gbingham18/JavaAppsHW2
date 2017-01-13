@@ -6,23 +6,19 @@ public class Police extends Person
 	String policeRole;
 	int EmployeeID = 1111;
 	
-	public Rank rank;
-	
-	public enum Rank
-	{
-		Patrol,
-		Sergeant,
-		Captain,
-		Chief
-	}
-	
 	public void payEmployee() {
 		int newSavings = Savings + 100;
 		Savings = newSavings;
 	}
 	
-	public int getEmpolyeeID() {
+	public int getEmployeeID() 
+	{
 		return EmployeeID;
+	}
+	
+	public void setID(int x)
+	{
+		EmployeeID = x;
 	}
 	
 	public String getName()
@@ -46,67 +42,5 @@ public class Police extends Person
 	public int getSavings()
 	{
 		return Savings;
-	}
-	
-	public int getX()
-	{
-		return x;
-	}
-	
-	public int getY()
-	{
-		return y;
-	}
-	
-	public void setX(int X)
-	{
-		x = X;
-	}
-	
-	public void setY(int Y)
-	{
-		y = Y;
-	}
-	
-	public String getRank()
-	{
-		String s = "String";
-		if(this.rank == Rank.Patrol)
-		{
-			s = "Patrol";
-		}
-		else if(this.rank == Rank.Sergeant)
-		{
-			s = "Sergeant";
-		}
-		else if(this.rank == Rank.Captain)
-		{
-			s = "Captain";
-		}
-		else if(this.rank == Rank.Chief)
-		{
-			s = "Chief";
-		}
-		return s;
-	}
-	
-	public void setRank(String r)
-	{
-		if(r == "Patrol")
-		{
-			rank = Rank.Patrol;
-		}
-		else if(r == "Sergeant")
-		{
-			rank = Rank.Sergeant;
-		}
-		else if(r == "Captain")
-		{
-			rank = Rank.Captain;
-		}
-		else if(r == "Chief")
-		{
-			rank = Rank.Chief;
-		}	
 	}
 }
